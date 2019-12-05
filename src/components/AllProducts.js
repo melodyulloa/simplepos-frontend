@@ -19,7 +19,7 @@ class Inventory extends Component{
         let token = localStorage.jwtToken
         axios({
             method: 'get',
-            url: '/api/products',
+            url: 'https://simplepos-server.herokuapp.com/api/products',
             headers: {
               Authorization: token
             }

@@ -47,7 +47,7 @@ class Inventory extends Component{
         if(token){
             axios({
                 method: 'get',
-                url: '/api/products',
+                url: 'https://simplepos-server.herokuapp.com/api/products',
                 headers: {
                     Authorization: token
                 }
@@ -119,7 +119,7 @@ class Inventory extends Component{
 
         axios({
           method: 'post',
-          url: '/api/products',
+          url: 'https://simplepos-server.herokuapp.com/api/products',
           data: body,
           headers: {
             Authorization: token
@@ -157,7 +157,7 @@ class Inventory extends Component{
         
         axios({
           method: 'put',
-          url: '/api/products/'+this.state.editProductId,
+          url: 'https://simplepos-server.herokuapp.com/api/products/'+this.state.editProductId,
           data: body,
           headers: {
             Authorization: token
@@ -257,7 +257,7 @@ class Inventory extends Component{
 
         axios({
             method: 'delete',
-            url: '/api/products/'+id,
+            url: 'https://simplepos-server.herokuapp.com/api/products/'+id,
             body: data,
             headers: {
                 Authorization: token

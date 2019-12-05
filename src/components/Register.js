@@ -40,7 +40,7 @@ handleSubmit(event){
   let url = 'api/registration';
   axios({
     method: 'post',
-    url: '/api/users',
+    url: 'https://simplepos-server.herokuapp.com/api/users',
     data: body
   })
   .then(response=>{

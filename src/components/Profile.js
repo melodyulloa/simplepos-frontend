@@ -36,7 +36,7 @@ class Profile extends Component{
         if(token){
             axios({
                 method: 'get',
-                url: '/api/profile',
+                url: 'https://simplepos-server.herokuapp.com/api/profile',
                 headers: {
                     Authorization: token
                 }
