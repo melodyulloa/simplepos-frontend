@@ -44,7 +44,7 @@ class Login extends React.Component {
           let url = 'api/registration';
           axios({
             method: 'post',
-            url: '/api/login',
+            url: 'https://polar-shore-74155.herokuapp.com/api/login',
             data: body
           })
           .then(response=>{
